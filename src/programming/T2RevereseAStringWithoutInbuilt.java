@@ -1,7 +1,7 @@
 package programming;
 
 public class T2RevereseAStringWithoutInbuilt {
-
+//reverse a string without inbuilt function
 	public String reverseString(String input) {
 		char[] chars = input.toCharArray();
 		int left = 0, right = chars.length - 1;
