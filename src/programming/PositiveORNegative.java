@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class PositiveORNegative {
 	
 	
+	//find number is postive or Neg
 	public static void main(String[] args) {
 		
 		Scanner scanner=new Scanner(System.in);
