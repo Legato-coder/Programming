@@ -2,20 +2,34 @@ package programming;
 
 public class Drone {
     
-    public static void main(String[] args) {
    
-    	int i=10;
-    	if(i>100) {
-    		System.out.println("i greater than 100");
-    	} else if(i==88) {
-    		System.out.println("i equal to 88");
-    	} else if (i==76) {
-    		System.out.println("i eaual to 77");
-    	} else {
-    		System.out.println("print this");
-    	}
+	
+	
+	    static int oversPlayed = 0; // Static variable to track overs played
+
+	    static void updateOvers(int overs) {
+	        oversPlayed += overs; // Update the number of overs played
+	    }
+
+	    static void displayGameStatus() {
+	        System.out.println("Overs Played: " + oversPlayed);
+	    }
+
+	    public static void main(String[] args) {
+	        Player player1 = new Player("Virat");
+	        Player player2 = new Player("Rohit");
+
+	        player1.scoreRuns(50);
+	        player2.scoreRuns(75);
+
+	        Team.addRuns(player1.runs);
+	        Team.addRuns(player2.runs);
+
+	        updateOvers(10); // Update the overs played
+	        displayGameStatus(); // Display game status
+	    }
+	}
+
     	
-    	
-    	
-    }
+    
 }
