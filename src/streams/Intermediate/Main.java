@@ -15,7 +15,7 @@ public class Main {
 		new Person ("Ann", 25),
 		new Person ("kid", 1)	
 		);
-		
+		 // 1. Filter: Get people older than 28
 		List<Person> olderthan25 = people.stream()
 				.filter(person -> person.getAge() > 24)
 				.collect(Collectors.toList());
