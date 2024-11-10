@@ -13,6 +13,7 @@ public class LambdaExample {
 		System.out.println("Sorted array by length:");
 		for (String word : words) {
 			System.out.println(word);
+			
 		}
 	}
 }

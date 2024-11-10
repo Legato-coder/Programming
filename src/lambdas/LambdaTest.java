@@ -1,13 +1,18 @@
 package lambdas;
 
+import java.util.ArrayList;
+
 public class LambdaTest {
-	
+
 	public static void main(String[] args) {
-		
-		 getMsg() -> 
-			System.out.println("test method");
-		
-		
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(5);
+		numbers.add(9);
+		numbers.add(8);
+		numbers.add(1);
+		numbers.forEach((n) -> {
+			System.out.println(n);
+		});
 	}
 
 }
